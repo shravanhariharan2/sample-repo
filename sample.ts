@@ -18,6 +18,12 @@ interface MerchOrder {
   quantity: number; 
 }
 
+/**
+ * Below are a few classes/functions that might be useful in implementing our main
+ * function at the bottom.
+ * 
+ * You can assume that these functions are properly implemented.
+ */
 class MerchStoreDatabase {
   static async insertOrder(order: MerchOrder): Promise<void> {
     // add the order to the database
@@ -28,6 +34,10 @@ class EmailService {
   static async sendOrderConfirmation(user: User, order: MerchOrder): Promise<void> {
     // send an email as confirmation
   }
+}
+
+function generateId() {
+  // generate a random 32-character string
 }
 
 /**
