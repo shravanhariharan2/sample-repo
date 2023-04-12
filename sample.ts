@@ -13,18 +13,19 @@ interface MerchItem {
 
 interface MerchOrder {
   id: string;
+  userId: string;
   itemId: string;
   quantity: number; 
 }
 
 class MerchStoreDatabase {
-  async insertOrder(order: MerchOrder): Promise<void> {
+  static async insertOrder(order: MerchOrder): Promise<void> {
     // add the order to the database
   }
 }
 
 class EmailService {
-  async sendOrderConfirmation(user: User, order: MerchOrder): Promise<void> {
+  static async sendOrderConfirmation(user: User, order: MerchOrder): Promise<void> {
     // send an email as confirmation
   }
 }
