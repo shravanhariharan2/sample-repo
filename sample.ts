@@ -36,7 +36,7 @@ class EmailService {
   }
 }
 
-function generateId() {
+function generateId(): string {
   // generate a random 32-character string
 }
 
